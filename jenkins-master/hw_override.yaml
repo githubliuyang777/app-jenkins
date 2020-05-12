@@ -9,8 +9,6 @@ master:
   testEnabled: false
   # used to specify the service type of master service
   serviceType: LoadBalancer
-  # EIP for node load balancer
-  loadBalancerIP: 114.116.250.98
   # used to specify the service port for master web UI
   servicePort: 80
   # used to specify the service node port for master web UI
