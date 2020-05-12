@@ -1,0 +1,5 @@
+resources:
+  - jenkins.yaml
+commonLabels:
+  app: jenkins
+
