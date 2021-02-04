@@ -129,7 +129,7 @@ data:
     rm -rf /usr/share/jenkins/ref/plugins/*.lock
     /usr/local/bin/install-plugins.sh `echo $(cat /var/jenkins_home/plugins.txt)`;
     # Copy plugins to shared volume
-    yes n | cp -i /usr/share/jenkins/ref/plugins/* /var/jenkins_plugins/;
+    yes n | cp -ir /usr/share/jenkins/ref/plugins/* /var/jenkins_plugins/;
   plugins.txt: |-
     kubernetes:1.18.2
     workflow-job:2.33
