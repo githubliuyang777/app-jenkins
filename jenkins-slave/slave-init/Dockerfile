@@ -7,10 +7,11 @@ WORKDIR /opt/jenkins-aget/
 
 COPY entrypoint.sh /opt/jenkins-aget/
 
-RUN apt update \
-    && apt upgrade \
-    && apt install -y xmlstarlet \
-    && apt install -y curl
+RUN apt-get update \
+    && apt-get upgrade \
+    && apt-get install -y xmlstarlet \
+    && apt-get install -y curl \
+    && apt-get install -y jq
     
 RUN ls /opt/jenkins-aget/entrypoint.sh \
     && chmod +x /opt/jenkins-aget/entrypoint.sh
