@@ -8,6 +8,7 @@ WORKDIR /opt/jenkins-aget/
 COPY entrypoint.sh /opt/jenkins-aget/
 
 RUN apt update \
+    && apt upgrade \
     && apt install -y xmlstarlet \
     && apt install -y curl
     
