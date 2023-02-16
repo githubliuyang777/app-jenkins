@@ -1,4 +1,4 @@
-FROM timbru31/alpine-java-maven:latest
+FROM smartthingsoss/jenkins-agent-jdk11:latest
 
 MAINTAINER tommylikehu@gmail.com
 
