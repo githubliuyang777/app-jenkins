@@ -13,4 +13,4 @@ COPY entrypoint.sh /usr/local/bin/
 
 RUN ls /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
