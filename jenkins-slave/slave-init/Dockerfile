@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:8u202b08_jdk
+FROM timbru31/alpine-java-maven:latest
 
 MAINTAINER tommylikehu@gmail.com
 
@@ -10,4 +10,7 @@ RUN apk update && \
     apk add xmlstarlet
 
 COPY entrypoint.sh /usr/local/bin/
+
+RUN ls /usr/local/bin/entrypoint.sh
+
 ENTRYPOINT ["entrypoint.sh"]
